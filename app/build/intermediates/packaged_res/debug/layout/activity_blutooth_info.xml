@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blutooth_info">
+
+  <Button
+      android:id="@+id/findN"
+      android:layout_width="314dp"
+      android:layout_height="106dp"
+      android:layout_marginStart="46dp"
+      android:layout_marginTop="67dp"
+      android:layout_marginEnd="46dp"
+      android:layout_marginBottom="17dp"
+      android:onClick="findNM"
+      android:text="find name and mac address for paired devices"
+      app:layout_constraintBottom_toTopOf="@+id/remove"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/remove"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="59dp"
+      android:onClick="clear_list"
+      android:text="clear data"
+      app:layout_constraintBottom_toTopOf="@+id/print"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/findN" />
+
+  <TextView
+      android:id="@+id/print"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="61dp"
+      android:layout_marginEnd="61dp"
+      android:layout_marginBottom="70dp"
+      android:text="devicese name and mac address..."
+      android:textAlignment="center"
+      android:textColor="#9C27B0"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/remove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
